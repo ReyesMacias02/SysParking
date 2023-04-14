@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Tipo;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\DB;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
     {
         
         view()->composer('layouts.template', function($view){
-            $tipos=-1;
+            $tipos = DB::table('Tipos')->count();
             $view->with(['tipos'=>$tipos]);
         });
     }

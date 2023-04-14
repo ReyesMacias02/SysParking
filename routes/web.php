@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::view('cajones','cajones')->name('cajon');
+Route::view('tipos','tipos')->name('tipos');

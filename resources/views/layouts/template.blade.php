@@ -547,6 +547,8 @@
         <script src="{{ asset('plugins/notification/snackbar/snackbar.min.js') }}"></script>
         <script src="{{ asset('plugins/flatpickr/flatpickr.js') }}"></script>
         <script src="{{ asset('plugins/flatpickr/flatpickr_es.js') }}"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <!-- SECCIÓN PARA INCLUÍR SCRIPTS PERSONALIZADOS EN LOS MÓDULOS DEL SISTEMA -->
         @yield('scripts')
@@ -573,5 +575,6 @@
                 toastr.error(msgError, "error");
             });
         </script>
+      
     </body>
 </html>
