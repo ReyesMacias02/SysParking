@@ -349,11 +349,11 @@
                                 </li>
 
                                 <li>
-                                    <a href="#"> CAJONES </a>
+                                    <a href="{{url('cajones')}}"> CAJONES </a>
                                 </li>
 
                                 <li>
-                                    <a href="#"> TIPOS DE DEHICULOS </a>
+                                    <a href="{{url('tipos')}}"> TIPOS DE DEHICULOS </a>
                                 </li>
                             </ul>
                         </li>

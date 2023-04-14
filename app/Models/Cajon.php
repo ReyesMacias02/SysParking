@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Cajon extends Model
 {
     use HasFactory;
+    protected $table='cajones';
+    protected $fillable=['descripcion','tipo_id','estatus'];
+    
+    //relaciones entre cajones y tipos.
+
 }

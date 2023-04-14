@@ -21,13 +21,20 @@ class Tipos extends Component
     //se ejecuta despues del mount
     public function render()
     {
+        $tipos=Tipo::all();
         if (strlen($this->search)>0) {
            $info = Tipo::where('descripcion', 'LIKE', '%'.$this->search.'%')->simplePaginate($this->pagination);
-            return view('livewire.tipos.component',['info'=>$info]);
+            return view('livewire.tipos.component',[
+                'info'=>$info,
+                'tipos'=>$tipos
+            ]);
         }
         else{
             $info = Tipo::simplePaginate($this->pagination);
-            return view('livewire.tipos.component',['info'=>$info]); 
+            return view('livewire.tipos.component',[
+                'info'=>$info,
+                'tipos'=>$tipos
+            ]); 
         }
         
     }

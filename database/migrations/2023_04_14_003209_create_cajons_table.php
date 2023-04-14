@@ -11,8 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cajons', function (Blueprint $table) {
+        Schema::create('cajones', function (Blueprint $table) {
             $table->id();
+            $table->string('descripcion');
+            $table->enum('estatus',['DISPONIBLE','OCUPADO'])->default('DISPONIBLE');
+            $table->unsignedBigInteger('tipo_id');
+            $table->foreign('tipo_id')->references('id')->on('tipos');
             $table->timestamps();
         });
     }
@@ -22,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cajons');
+        Schema::dropIfExists('cajones');
     }
 };
