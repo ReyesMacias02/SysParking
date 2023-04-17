@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Tarifa extends Model
 {
     use HasFactory;
+    protected $fillable=['tiempo','descripcion','costo','tipo_id','jerarquia'];
+    protected $table='tarifas';
+
+
+    //FUNCIONES DE RALACIONES   
 }

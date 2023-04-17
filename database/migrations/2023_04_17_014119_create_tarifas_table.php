@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('tarifas', function (Blueprint $table) {
             $table->id();
+            $table->enum('tiempo',['Hora','Dia','Semana','Mes'])->default('Hora');
+            $table->string('descripcion',100)->nullable('');
+            $table->decimal('costo',10,2)->default(0);
+            $table->integer('jerarquia')->default(0);
+            $table->unsignedBigInteger('tipo_id');
+            $table->foreign('tipo_id')->references('id')->on('tipos');
             $table->timestamps();
         });
     }
