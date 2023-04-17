@@ -3,7 +3,7 @@ var cSpeed = 6000;
 // Simple Counter
 
 var value = $('.s-counter2').text();
-$('.s-counter2').countTo({
+('.s-counter2').countTo({
     from: 0,
     to: value,
     speed: cSpeed,

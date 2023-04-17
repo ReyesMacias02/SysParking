@@ -400,7 +400,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="#"> MOVIMIENTOS </a>
+                                    <a href="{{url('Cajas')}}"> MOVIMIENTOS </a>
                                 </li>
                             </ul>
                         </li>
