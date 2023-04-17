@@ -46,7 +46,9 @@ class Tipos extends Component
     //movernos entre ventanas
     public  function doAction($action)
     {
+           $this->resetInput();
         $this->action=$action;
+     
 
     }
     // limpiar propiedades

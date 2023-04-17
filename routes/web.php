@@ -25,3 +25,4 @@ Route::view('tipos','tipos')->name('tipos');
 Route::view('Cajas','Cajas')->name('cajas');
 Route::view('tarifas','Tarifas')->name('cajas');
 Route::view('Empresas','empresas')->name('Empresas');
+Route::view('usuarios','usuarios')->name('usuarios');

@@ -7,23 +7,23 @@
                     Datos de la empresa
                 </h4>
             </div>
-            <div class="form-group col-sm-12">
+            <div class="form-group col-sm-12 col-md-4 col-lg-4">
                 <label >Nombre</label>
                 <input type="text" wire:model.lazy="nombre" class="form-control text-left">
             </div>
-            <div class="form-group col-sm-12">
+            <div class="form-group col-sm-12 col-md-4 col-lg-4">
                 <label >Telefono</label>
                 <input type="text" wire:model.lazy="telefono" maxlength="12" class="form-control text-left">
             </div>
-            <div class="form-group col-sm-12">
+            <div class="form-group col-sm-12 col-md-4 col-lg-4">
                 <label >Email</label>
                 <input type="text" wire:model.lazy="email" maxlength="65" class="form-control text-left">
             </div>
-            <div class="form-group col-sm-12">
+            <div class="form-group col-sm-12 col-md-4 col-lg-4">
                 <label >Direccion</label>
                 <input type="text" wire:model.lazy="direccion" class="form-control text-left">
             </div>
-            <div class="form-group col-sm-12">
+            <div class="form-group col-sm-12 col-md-4 col-lg-4">
                 <label >Logo</label>
                 <input type="file" name="" wire:change="$emit('fileChoosen',this)" accept="image/x-png image/gif image/jpeg" class="form-control-file  " id="image" >
             </div>

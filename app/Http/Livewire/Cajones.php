@@ -56,6 +56,7 @@ class Cajones extends Component
     }
     public function doAction($action)
     {
+        $this->resetInput();
         $this->action=$action;
     }
     public function resetInput()

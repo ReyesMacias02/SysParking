@@ -207,7 +207,7 @@
                             <div class="media">
                                 <img src="images/user.png" class="img-fluid" alt="admin-profile">
                                 <div class="media-body align-self-center">
-                                    <h6>@guest Luis-Fax @else {{ Auth::user()->name }} @endguest</h6>
+                                    <h6>@guest Luis-Fax @else {{ Auth::user()->nombre }} @endguest</h6>
                                 </div>
                             </div>
 
@@ -345,7 +345,7 @@
 
                             <ul class="collapse submenu list-unstyled" id="configurations" data-parent="#topAccordion">
                                 <li>
-                                    <a href="#">EMPRESA </a>
+                                    <a href="{{url('Empresas')}}">EMPRESA </a>
                                 </li>
 
                                 <li>
