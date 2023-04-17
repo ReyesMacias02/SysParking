@@ -21,7 +21,7 @@
                 </div>
                 <div class="form-group col-lg-4 col-md-4 col-sm-12 ">
                     <label>Comprobante</label>
-                    <input type="file" name="" wire:change="$emit('fileChoosen',this)" accept="image/x-png image/gif image/jpeg" class=" form-control-file " id="image" >
+                    <input type="file" name="" wire:change="$emit('fileChoosen',this)" accept="image/x-png image/gif image/jpeg" class="  " id="image" >
                 </div>
 
                
@@ -31,8 +31,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-5 mt-2  text-left">
-                             <button type="button" wire:click="doAction(1)" class="btn btn-dark mr-1">
+                <div class="col-lg-12 mt-2  text-left">
+                             <button type="button" wire:click="doAction(1)" class="btn btn-danger">
                                  <i class="mbri-left"></i> Regresar
                              </button>
                              <button type="button"

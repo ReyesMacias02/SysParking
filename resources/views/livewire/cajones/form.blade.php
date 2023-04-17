@@ -26,8 +26,8 @@
                 </select>
             </div>
             <div class="row">
-                <div class="col-lg-5 mt-2 text-left">
-                    <button type="button" class="btn btn-dark mr-1" wire:click="doAction(1)">
+                <div class="col-lg-12 mt-2 text-left">
+                    <button type="button" class="btn btn-danger" wire:click="doAction(1)">
                         <i class="mbri-left"></i>
                         Regresar
                     </button>

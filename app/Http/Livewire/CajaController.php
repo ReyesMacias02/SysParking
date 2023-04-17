@@ -141,7 +141,14 @@ class CajaController extends Component
     public function destroy($id)
     {
        if ($id) {
-        $record=Cajas::where('id',$id);
+        $record=Cajas::find($id);
+        $this->comprobante=$record->comprobante;
+        $rutaImagen = 'images/movs/'.$this->comprobante; // obtener la ruta completa de la imagen
+    
+        if (file_exists($rutaImagen)) {
+            unlink($rutaImagen); // eliminar la imagen del servidor
+           $record->delete();
+        }
         $record->delete();
         $this->resetInput();
        }

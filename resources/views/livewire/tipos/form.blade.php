@@ -22,7 +22,7 @@
                     </div>
                 </div>
 
-             <button type="button" wire:click="doAction(1)" class="btn btn-dark mr-1">
+             <button type="button" wire:click="doAction(1)" class="btn btn-danger">
                 <i class="mbri-left"></i> Regresar
             </button>
              <button type="button"

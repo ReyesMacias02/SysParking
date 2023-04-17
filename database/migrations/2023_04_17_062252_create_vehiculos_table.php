@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('vehiculos', function (Blueprint $table) {
             $table->id();
+            $table->string('placa',25)->nullable();
+            $table->string('modelo',12)->nullable();
+            $table->string('marca',18)->nullable();
+            $table->string('color',25)->nullable();
+            $table->unsignedBigInteger('tipo_id');
+            $table->foreign('tipo_id')->references('id')->on('tipos');
             $table->timestamps();
         });
     }
