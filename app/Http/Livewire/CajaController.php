@@ -26,7 +26,7 @@ class CajaController extends Component
         }
         else{
             $cajas=Cajas::leftjoin('users as u','u.id', 'cajas.user_id')
-            ->select('cajas.*','u.name')
+            ->select('cajas.*','u.nombre')
             ->orderBy('id','desc')
             ->paginate($this->pagination);
             return view('livewire.movimientos.component',[

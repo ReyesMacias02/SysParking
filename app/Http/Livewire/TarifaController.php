@@ -154,6 +154,7 @@ class TarifaController extends Component
     ];
     public function createFromModal($info)
     {
+       
        $data=json_decode($info);
        $this->select_id=$data->id;
        $this->tiempo=$data->tiempo;

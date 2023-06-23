@@ -152,7 +152,7 @@
         
         }
         function editTarifa(row){
-            var info=JSON.parse(row)
+            
             $('#id').val(info.id)
             $('#costo').val(info.costo)
             $('#descripcion').val(info.descripcion)
@@ -162,7 +162,7 @@
             $('#modalTarifa').modal('show')
         }
         function openModal(jerarquia){
-            $('#id').val(0)
+            $('#ids').val(0)
             $('#costo').val('')
             $('#descripcion').val('')
             $('#tiempo').val('Elegir')
@@ -185,7 +185,7 @@
                 return;
             }
             var data=JSON.stringify({
-                'id':$('#id').val(),
+                'id':$('#ids').val(),
                 'tiempo':$('#tiempo option:selected').val(),
                 'tipo':$('#tipo option:selected').val(),
                 'costo':$('#costo').val(),

@@ -567,7 +567,7 @@
         @livewireScripts
 
         <script>
-            window.livewire.on('msgok', msgOK => {
+            window.livewire.on('ms-gok', msgOK => {
                 toastr.success(msgOK, "info");
             });
 
